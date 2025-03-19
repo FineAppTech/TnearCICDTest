@@ -12,7 +12,10 @@ struct MainUI_List: Codable {
 }
 
 struct ListItem: Identifiable, Codable {
-    let id: String
+    let id: Int
     let title: String
     let subtitle: String
+    let isNavigable:Bool
 }
+
+

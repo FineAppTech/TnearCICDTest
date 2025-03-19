@@ -42,7 +42,7 @@ class RemoteConfigViewModel: ObservableObject {
                 self.items = decodedItems.list_items
             }
         } catch {
-            print("JSON 파싱 오류: \(error.localizedDescription)")
+            print("JSON 파싱 오류: \(error.localizedDescription) \(error)")
         }
     }
 }
