@@ -53,11 +53,6 @@
 			path = TnearCICDTestUITests;
 			sourceTree = "<group>";
 		};
-		F019E6162D8A9A4F0044B824 /* .github */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = .github;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +88,6 @@
 		F01307B92D87FD1F00C4A04D = {
 			isa = PBXGroup;
 			children = (
-				F019E6162D8A9A4F0044B824 /* .github */,
 				F01307C42D87FD1F00C4A04D /* TnearCICDTest */,
 				F01307D72D87FD2000C4A04D /* TnearCICDTestTests */,
 				F01307E12D87FD2000C4A04D /* TnearCICDTestUITests */,
@@ -128,7 +122,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				F01307C42D87FD1F00C4A04D /* TnearCICDTest */,
-				F019E6162D8A9A4F0044B824 /* .github */,
 			);
 			name = TnearCICDTest;
 			packageProductDependencies = (
@@ -428,6 +421,7 @@
 				DEVELOPMENT_TEAM = 27WJDMWS6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tnear CI/CD - Test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,6 +453,7 @@
 				DEVELOPMENT_TEAM = 27WJDMWS6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tnear CI/CD - Test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -618,6 +613,7 @@
 				DEVELOPMENT_TEAM = 27WJDMWS6V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tnear CI/CD - Test";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
