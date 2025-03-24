@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,21 +40,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F01307C42D87FD1F00C4A04D /* TnearCICDTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TnearCICDTest;
-			sourceTree = "<group>";
-		};
-		F01307D72D87FD2000C4A04D /* TnearCICDTestTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TnearCICDTestTests;
-			sourceTree = "<group>";
-		};
-		F01307E12D87FD2000C4A04D /* TnearCICDTestUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TnearCICDTestUITests;
-			sourceTree = "<group>";
-		};
+		F01307C42D87FD1F00C4A04D /* TnearCICDTest */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TnearCICDTest; sourceTree = "<group>"; };
+		F01307D72D87FD2000C4A04D /* TnearCICDTestTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TnearCICDTestTests; sourceTree = "<group>"; };
+		F01307E12D87FD2000C4A04D /* TnearCICDTestUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TnearCICDTestUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +196,7 @@
 				};
 			};
 			buildConfigurationList = F01307BD2D87FD1F00C4A04D /* Build configuration list for PBXProject "TnearCICDTest" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -219,7 +208,6 @@
 			packageReferences = (
 				F01307F22D88F2C500C4A04D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = F01307C32D87FD1F00C4A04D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
