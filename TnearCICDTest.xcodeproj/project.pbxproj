@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,12 +39,6 @@
 		F0AF3FE92D90DC0200E75C97 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F01307C42D87FD1F00C4A04D /* TnearCICDTest */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TnearCICDTest; sourceTree = "<group>"; };
-		F01307D72D87FD2000C4A04D /* TnearCICDTestTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TnearCICDTestTests; sourceTree = "<group>"; };
-		F01307E12D87FD2000C4A04D /* TnearCICDTestUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TnearCICDTestUITests; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
 		F01307BF2D87FD1F00C4A04D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -79,9 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				F0AF3FE92D90DC0200E75C97 /* .gitignore */,
-				F01307C42D87FD1F00C4A04D /* TnearCICDTest */,
-				F01307D72D87FD2000C4A04D /* TnearCICDTestTests */,
-				F01307E12D87FD2000C4A04D /* TnearCICDTestUITests */,
 				F01307C32D87FD1F00C4A04D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,9 +102,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F01307C42D87FD1F00C4A04D /* TnearCICDTest */,
-			);
 			name = TnearCICDTest;
 			packageProductDependencies = (
 				F01307F32D88F2C500C4A04D /* FirebaseAnalytics */,
@@ -139,9 +127,6 @@
 			dependencies = (
 				F01307D62D87FD2000C4A04D /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				F01307D72D87FD2000C4A04D /* TnearCICDTestTests */,
-			);
 			name = TnearCICDTestTests;
 			packageProductDependencies = (
 			);
@@ -161,9 +146,6 @@
 			);
 			dependencies = (
 				F01307E02D87FD2000C4A04D /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F01307E12D87FD2000C4A04D /* TnearCICDTestUITests */,
 			);
 			name = TnearCICDTestUITests;
 			packageProductDependencies = (
