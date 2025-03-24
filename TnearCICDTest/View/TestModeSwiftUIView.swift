@@ -35,7 +35,7 @@ struct TestModeSwiftUIView: View {
                     }
                 }
             }
-            .navigationTitle("내부 테스트 설정")
+            .navigationTitle("Test Mode")
         }
     }
 }
