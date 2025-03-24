@@ -23,7 +23,9 @@ platform :ios do
       app_identifier: "com.idealapp.githubcicdtest",
       readonly:true) 
       # 인증서 및 프로비저닝 프로파일 관리
-    build_app(scheme: "TnearCICDTest") # Xcode 프로젝트 빌드
+    build_app(
+      scheme: "TnearCICDTest",
+      derived_data_path: "build/DerivedData") # Xcode 프로젝트 빌드
     upload_to_testflight # TestFlight 업로드
   end
 
