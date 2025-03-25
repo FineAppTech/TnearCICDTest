@@ -28,6 +28,11 @@ platform :ios do
       app_identifier: "com.idealapp.githubcicdtest",
       readonly:true) 
       # 인증서 및 프로비저닝 프로파일 관리
+
+      sigh(
+        app_identifier: "com.idealapp.githubcicdtest",
+        development: true
+      )
       
       # 🔹 환경 변수 설정
       ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "30"
