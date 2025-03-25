@@ -33,6 +33,13 @@ jobs:
         run: echo "$APP_STORE_API_KEY_CONTENT" | base64 --decode > ./AuthKey.p8
         env:
           APP_STORE_API_KEY_CONTENT: ${{ secrets.APP_STORE_API_KEY_CONTENT }}
+          
+      - name: Set up Match and Authenticate with App Store
+        env:
+          FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
+          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+        run: |
+          bundle exec fastlane match appstore --readonly false
 
       - name: Build and upload to TestFlight
         run: fastlane beta
