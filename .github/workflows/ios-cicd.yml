@@ -25,6 +25,11 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0
+          
+      - name: Install Bundler and Gems
+        run: |
+          gem install bundler
+          bundle install  # ✅ 필수: Gemfile에 정의된 gem을 설치
 
       - name: Install Fastlane
         run: gem install fastlane
