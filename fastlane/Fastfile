@@ -30,7 +30,15 @@ platform :ios do
 
     build_app(
       scheme: "TnearCICDTest",
-      derived_data_path: "build/DerivedData") # Xcode 프로젝트 빌드
+      derived_data_path: "build/DerivedData",
+      export_options: {
+        signingStyle: "automatic",
+        provisioningProfiles: {
+          "com.idealapp.githubcicdtest" => "match AppStore com.idealapp.githubcicdtest"
+        }
+      },
+      xcodebuild_command: "-allowProvisioningUpdates"
+    ) # Xcode 프로젝트 빌드
     upload_to_testflight # TestFlight 업로드
   end
 
