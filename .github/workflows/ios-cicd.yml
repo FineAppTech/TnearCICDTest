@@ -41,7 +41,7 @@ jobs:
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
         run: |
-          bundle exec fastlane match appstore --readonly true
+           bundle exec fastlane match appstore --readonly true --app_identifier "com.idealapp.githubcicdtest"
 
       - name: Build and upload to TestFlight
         run: bundle exec fastlane beta
