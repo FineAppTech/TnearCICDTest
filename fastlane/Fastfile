@@ -21,7 +21,7 @@ platform :ios do
     match(
       type: "appstore", 
       app_identifier: "com.idealapp.githubcicdtest",
-      readonly:false) 
+      readonly:true) 
       # 인증서 및 프로비저닝 프로파일 관리
       
       # 🔹 환경 변수 설정
@@ -32,7 +32,7 @@ platform :ios do
       scheme: "TnearCICDTest",
       derived_data_path: "build/DerivedData",
       export_options: {
-        signingStyle: "automatic",
+        signingStyle: "manual",
         provisioningProfiles: {
           "com.idealapp.githubcicdtest" => "match AppStore com.idealapp.githubcicdtest"
         }
