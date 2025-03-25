@@ -189,7 +189,7 @@
 				};
 			};
 			buildConfigurationList = F01307BD2D87FD1F00C4A04D /* Build configuration list for PBXProject "TnearCICDTest" */;
-			compatibilityVersion = "Xcode 15.3";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
