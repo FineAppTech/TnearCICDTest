@@ -26,13 +26,15 @@ jobs:
         with:
           ruby-version: 3.0
           
-      - name: Install Bundler and Gems
+      - name: Install dependencies
         run: |
           gem install bundler
-          bundle install  # ✅ 필수: Gemfile에 정의된 gem을 설치
+          bundle install  # ✅ Gemfile이 있으면 패키지 설치
+          gem install json rexml logger  # ✅ 누락된 gem 설치
+
 
       - name: Install Fastlane
-        run: gem install fastlane
+        run: gem install fastlane -v 2.227.0  # ✅ Fastlane 최신 버전 설치
 
       - name: Decode App Store API Key
         run: echo "$APP_STORE_API_KEY_CONTENT" | base64 --decode > ./AuthKey.p8
