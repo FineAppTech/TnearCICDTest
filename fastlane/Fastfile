@@ -37,7 +37,7 @@ platform :ios do
           "com.idealapp.githubcicdtest" => "match AppStore com.idealapp.githubcicdtest"
         }
       },
-      export_xcargs: "-allowProvisioningUpdates"
+      xcodebuild_command: "-allowProvisioningUpdates"
     ) # Xcode 프로젝트 빌드
     upload_to_testflight # TestFlight 업로드
   end
