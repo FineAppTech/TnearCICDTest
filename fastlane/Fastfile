@@ -23,6 +23,11 @@ platform :ios do
       app_identifier: "com.idealapp.githubcicdtest",
       readonly:true) 
       # 인증서 및 프로비저닝 프로파일 관리
+      
+      # 🔹 환경 변수 설정
+      ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "30"
+      ENV["FASTLANE_XCODEBUILD_SETTINGS_RETRIES"] = "10"
+
     build_app(
       scheme: "TnearCICDTest",
       derived_data_path: "build/DerivedData") # Xcode 프로젝트 빌드
@@ -32,6 +37,11 @@ platform :ios do
   desc "Build and upload to Firebase"
   lane :firebase do
     match(type: "development", readonly: true) # 인증서 관리
+
+    # 🔹 환경 변수 설정
+    ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "30"
+    ENV["FASTLANE_XCODEBUILD_SETTINGS_RETRIES"] = "10"
+
     build_app(scheme: "TnearCICDTest") # Xcode 빌드
     firebase_app_distribution(
       app: ENV["FIREBASE_APP_ID"],
