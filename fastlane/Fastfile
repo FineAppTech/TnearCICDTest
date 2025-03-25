@@ -19,6 +19,11 @@ platform :ios do
   desc "Build and upload to TestFlight"
   lane :beta do
     match(
+      type: "development",  # ✅ 개발용 프로비저닝도 다운로드
+      app_identifier: "com.idealapp.githubcicdtest",
+      readonly: true
+    ) 
+    match(
       type: "appstore", 
       app_identifier: "com.idealapp.githubcicdtest",
       readonly:true) 
