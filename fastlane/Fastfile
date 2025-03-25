@@ -21,7 +21,7 @@ platform :ios do
     match(
       type: "appstore", 
       app_identifier: "com.idealapp.githubcicdtest",
-      readonly:false) 
+      readonly:true) 
       # 인증서 및 프로비저닝 프로파일 관리
       
       # 🔹 환경 변수 설정
